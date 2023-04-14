@@ -37,6 +37,6 @@ describe('EarthAge', () => {
   });
 
   test('should correctly calculate difference between a current age and a past age in mercury years', () => {
-    expect(earthAge.mercuryYearsSinceLastBDay().toEqual(45.8334));
+    expect(earthAge.mercuryYearsSinceLastBDay()).toEqual(45.8334);
   })
 });
