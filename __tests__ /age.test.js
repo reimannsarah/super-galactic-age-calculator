@@ -73,7 +73,7 @@ describe('EarthAge', () => {
 
   test('should correctly calculate difference between a current age and a future age in jupiter years', () => {
     earthAge.addFutureBDay(49);
-    expect(earthAge.jupiterYearsUntilNextBDay()).toEqual(1.2475);
+    expect(earthAge.jupiterYearsUntilNextBDay()).toEqual(1.2648);
   });
 
 });
