@@ -52,6 +52,10 @@ export default class EarthAge {
   }
 
   marsYearsSinceLastBDay() {
-    
+    let difference = this.age - this.pastBDay;
+    let marsDifference = parseFloat((difference / 1.88).toFixed(4));
+    return marsDifference;
   }
-}
+  
+  }
+
