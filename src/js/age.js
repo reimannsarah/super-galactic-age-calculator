@@ -34,4 +34,7 @@ export default class EarthAge {
     return this.pastBDay;  
   }
   
+  addFutureBDay() {
+   
+  }
 }
