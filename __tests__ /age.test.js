@@ -50,4 +50,9 @@ describe('EarthAge', () => {
     earthAge.addPastBDay(23);
     expect(earthAge.marsYearsSinceLastBDay()).toEqual(5.8511);
   });
+
+  test('should correctly calculate difference between a current age and a past age in jupiter years', () => {
+    earthAge.addPastBDay(23);
+    expect(earthAge.jupiterYearsSinceLastBDay()).toEqual(0.9275);
+  });
 });
