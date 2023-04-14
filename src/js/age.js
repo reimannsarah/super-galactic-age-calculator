@@ -46,6 +46,8 @@ export default class EarthAge {
   }
 
   venusYearsSinceLastBDay() {
-    
+    let difference = this.age - this.pastBDay;
+    let venusDifference = parseFloat((difference / 0.62).toFixed(4));
+    return venusDifference;
   }
 }
