@@ -70,7 +70,9 @@ export default class EarthAge {
   }
   
   venusYearsUntilNextBDay() {
-    
+    let difference = this.futureBDay - this.age;
+    let venusDifference = parseFloat((difference / 0.62).toFixed(4));
+    return venusDifference;
   }
 
   }
