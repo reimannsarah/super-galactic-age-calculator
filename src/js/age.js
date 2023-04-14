@@ -81,5 +81,9 @@ export default class EarthAge {
     return marsDifference;
   }
 
+  jupiterYearsUntilNextBDay() {
+    
+  }
+
   }
 
