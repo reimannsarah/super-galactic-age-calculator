@@ -45,4 +45,9 @@ describe('EarthAge', () => {
     earthAge.addPastBDay(23);
     expect(earthAge.venusYearsSinceLastBDay()).toEqual(17.7419);
   });
+
+  test('should correctly calculate difference between a current age and a past age in mars years', () => {
+    earthAge.addPastBDay(23);
+    expect(earthAge.marsYearsSinceLastBDay()).toEqual(5.8511);
+  });
 });
