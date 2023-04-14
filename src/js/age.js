@@ -28,5 +28,9 @@ export default class EarthAge {
     this.jupiterAge = parseFloat((age / 11.86).toFixed(4));
     return this.jupiterAge;
   }
+
+  addPastBDay() {
+  
+  }
   
 }
