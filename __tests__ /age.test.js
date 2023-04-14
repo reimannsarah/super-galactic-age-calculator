@@ -24,7 +24,7 @@ describe('EarthAge', () => {
     expect(earthAge.calculateMarsAge(34)).toEqual(18.0851);
   });
 
-  test('should correctly calculate mars age', () => {
+  test('should correctly calculate jupiter age', () => {
     expect(earthAge.calculateJupiterAge(34)).toEqual(2.8668);
   })
 });
