@@ -35,4 +35,8 @@ describe('EarthAge', () => {
   test('should add a value to the futureBDay property in the EarthAge constructor', () => {
     expect(earthAge.addFutureBDay(45)).toEqual(45);
   });
+
+  test('should correctly calculate difference between a current age and a past age in mercury years', () => {
+    expect(earthAge.mercuryYearsSinceLastBDay().toEqual(45.8334));
+  })
 });
