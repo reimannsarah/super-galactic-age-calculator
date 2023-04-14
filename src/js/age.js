@@ -82,7 +82,9 @@ export default class EarthAge {
   }
 
   jupiterYearsUntilNextBDay() {
-    
+    let difference = this.futureBDay - this.age;
+    let jupiterDifference = parseFloat((difference / 11.86).toFixed(4));
+    return jupiterDifference;
   }
 
   }
