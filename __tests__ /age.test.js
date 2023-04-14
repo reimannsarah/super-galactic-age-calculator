@@ -61,4 +61,9 @@ describe('EarthAge', () => {
     expect(earthAge.mercuryYearsUntilNextBDay()).toEqual(62.5000);
   });
 
+  test('should correctly calculate difference between a current age and a future age in venus years', () => {
+    earthAge.addFutureBDay(49);
+    expect(earthAge.venusYearsUntilNextBDay()).toEqual(24.1935);
+  });
+
 });
