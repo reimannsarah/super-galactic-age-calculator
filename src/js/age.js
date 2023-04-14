@@ -76,7 +76,9 @@ export default class EarthAge {
   }
 
   marsYearsUntilNextBDay() {
-    
+    let difference = this.futureBDay - this.age;
+    let marsDifference = parseFloat((difference / 1.88).toFixed(4));
+    return marsDifference;
   }
 
   }
