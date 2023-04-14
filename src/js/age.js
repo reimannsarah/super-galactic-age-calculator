@@ -5,6 +5,8 @@ export default class EarthAge {
     this.venusAge;
     this.marsAge;
     this.jupiterAge;
+    this.pastBDay;
+    this.futureBDay;
   }
   
   calculateMercuryAge(age) {
