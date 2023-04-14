@@ -68,6 +68,10 @@ export default class EarthAge {
     let mercuryDifference = parseFloat((difference / 0.24).toFixed(4));
     return mercuryDifference;
   }
+  
+  venusYearsUntilNextBDay() {
+    
+  }
 
   }
 
