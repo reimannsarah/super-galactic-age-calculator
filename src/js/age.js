@@ -29,8 +29,9 @@ export default class EarthAge {
     return this.jupiterAge;
   }
 
-  addPastBDay() {
-  
+  addPastBDay(pastBDay) {
+    this.pastBDay = pastBDay;
+    return this.pastBDay;  
   }
   
 }
