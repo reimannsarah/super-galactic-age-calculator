@@ -13,7 +13,8 @@ export default class EarthAge {
     return venusAge;
   }
   
-  calculateMarsAge() {
-    
+  calculateMarsAge(age) {
+    let marsAge = parseFloat((age / 1.88).toFixed(4));
+    return marsAge;
   }
 }
