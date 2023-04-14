@@ -55,4 +55,10 @@ describe('EarthAge', () => {
     earthAge.addPastBDay(23);
     expect(earthAge.jupiterYearsSinceLastBDay()).toEqual(0.9275);
   });
+
+  test('should correctly calculate difference between a current age and a future age in mercury years', () => {
+    earthAge.addFutureBDay(49);
+    expect(earthAge.mercuryYearsUntilNextBDay()).toEqual(62.5000);
+  });
+
 });
