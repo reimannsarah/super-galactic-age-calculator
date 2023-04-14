@@ -1,4 +1,4 @@
-import EarthAge from '../src/js/age.js';
+import EarthAge from './../src/js/age.js';
 
 describe('EarthAge', () => {
 
