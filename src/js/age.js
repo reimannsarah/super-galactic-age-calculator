@@ -75,5 +75,9 @@ export default class EarthAge {
     return venusDifference;
   }
 
+  marsYearsUntilNextBDay() {
+    
+  }
+
   }
 
