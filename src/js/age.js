@@ -3,7 +3,9 @@ export default class EarthAge {
     this.age = age;
   }
   
-  calculateMercuryAge() {
-
+  calculateMercuryAge(number) {
+    let mercuryAge = parseFloat((number / 0.24).toFixed(4));  
+    console.log(mercuryAge);
+    return mercuryAge;
   }
 }

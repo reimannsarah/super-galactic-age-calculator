@@ -13,6 +13,6 @@ describe('EarthAge', () => {
   });
 
   test('should correctly calculate mercury age', ()=> {
-    expect(earthAge.calculateMercuryAge()).toEqual(34);
+    expect(earthAge.calculateMercuryAge(34)).toEqual(141.6667);
   });
 });
