@@ -58,7 +58,9 @@ export default class EarthAge {
   }
 
   jupiterYearsSinceLastBDay() {
-    
+    let difference = this.age - this.pastBDay;
+    let jupiterDifference = parseFloat((difference / 11.86).toFixed(4));
+    return jupiterDifference;
   }
 
   }
