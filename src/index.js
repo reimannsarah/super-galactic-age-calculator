@@ -13,31 +13,43 @@ function showMercuryAge(e) {
   let age = setAge();
   let resultsDiv = document.getElementById("showResults");
   let showNumber = document.createElement("p");
-  let mercuryAge = earthAge.calculateMercuryAge(age);
-  showNumber.innerText
-  resultsDiv.append(mercuryAge);
+  showNumber.innerText = `Your age in Mercury years is: ${earthAge.calculateMercuryAge(age)}`;
+  resultsDiv.append(showNumber);
 }
 function showVenusAge(e) {
   e.preventDefault();
   let age = setAge();
   let resultsDiv = document.getElementById("showResults");
-  let venusAge = earthAge.calculateVenusAge(age);
-  resultsDiv.append(venusAge);
+  let showNumber = document.createElement("p");
+  showNumber.innerText = `Your age in Venus years is: ${earthAge.calculateVenusAge(age)}`;
+  resultsDiv.append(showNumber);
 }
 function showMarsAge(e) {
   e.preventDefault();
   let age = setAge();
   let resultsDiv = document.getElementById("showResults");
-  let marsAge = earthAge.calculateMarsAge(age);
-  resultsDiv.append(marsAge);
+  let showNumber = document.createElement("p");
+  showNumber.innerText = `Your age in Mercury years is: ${earthAge.calculateMarsAge(age)}`;
+  resultsDiv.append(showNumber);
 }
 function showJupiterAge(e) {
   e.preventDefault();
   let age = setAge();
   let resultsDiv = document.getElementById("showResults");
-  let JupiterAge = earthAge.calculateJupiterAge(age);
-  resultsDiv.append(JupiterAge);
+  let showNumber = document.createElement("p");
+  showNumber.innerText = `Your age in Mercury years is: ${earthAge.calculateJupiterAge(age)}`;
+  resultsDiv.append(showNumber);
 }
+
+function howManyMercuryYearsSince(e) {
+  e.preventDefault();
+  setAge();
+  let futureAge = document.getElementById("")
+  let resultsDiv = document.getElementById("showResults");
+  let showNumber = document.createElement("p");
+  showNumber.innerText = `It will be ${earthAge.mercuryYearsSinceLastBDay()} years until you are `
+}
+
 
 document.getElementById("ageInMercuryYears").addEventListener("click",showMercuryAge);
 document.getElementById("ageInVenusYears").addEventListener("click", showVenusAge);
