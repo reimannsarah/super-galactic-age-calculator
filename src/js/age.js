@@ -1,26 +1,30 @@
 export default class EarthAge {
   constructor(age) {
     this.age = age;
+    this.mercuryAge;
+    this.venusAge;
+    this.marsAge;
+    this.jupiterAge;
   }
   
   calculateMercuryAge(age) {
-    let mercuryAge = parseFloat((age / 0.24).toFixed(4));  
-    return mercuryAge;
+    mercuryAge = parseFloat((age / 0.24).toFixed(4));  
+    return this.mercuryAge;
   }
 
   calculateVenusAge(age) {
-    let venusAge = parseFloat((age / 0.62).toFixed(4));
-    return venusAge;
+    venusAge = parseFloat((age / 0.62).toFixed(4));
+    return this.venusAge;
   }
   
   calculateMarsAge(age) {
-    let marsAge = parseFloat((age / 1.88).toFixed(4));
-    return marsAge;
+    marsAge = parseFloat((age / 1.88).toFixed(4));
+    return this.marsAge;
   }
 
   calculateJupiterAge(age) {
-    let jupiterAge = parseFloat((age / 11.86).toFixed(4));
-    return jupiterAge;
+    jupiterAge = parseFloat((age / 11.86).toFixed(4));
+    return this.jupiterAge;
   }
   
 }
