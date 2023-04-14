@@ -63,5 +63,9 @@ export default class EarthAge {
     return jupiterDifference;
   }
 
+  mercuryYearsUntilNextBDay() {
+    
+  }
+
   }
 
