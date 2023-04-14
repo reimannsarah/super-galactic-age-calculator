@@ -29,7 +29,6 @@ describe('EarthAge', () => {
   })
 
   test('should add a value to the pastBDay property in the EarthAge constructor', () => {
-    earthAge.addPastBDay(23);
-    expect(this.pastBday).toEqual(23);
-  })
+    expect(earthAge.addPastBDay(23)).toEqual(23);
+  });
 });
