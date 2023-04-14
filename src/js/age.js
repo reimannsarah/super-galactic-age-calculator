@@ -64,7 +64,9 @@ export default class EarthAge {
   }
 
   mercuryYearsUntilNextBDay() {
-    
+    let difference = this.futureBDay - this.age;
+    let mercuryDifference = parseFloat((difference / 0.24).toFixed(4));
+    return mercuryDifference;
   }
 
   }
