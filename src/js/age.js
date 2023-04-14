@@ -18,8 +18,9 @@ export default class EarthAge {
     return marsAge;
   }
 
-  calculateJupiterAge() {
-
+  calculateJupiterAge(age) {
+    let jupiterAge = parseFloat((age / 11.86).toFixed(4));
+    return jupiterAge;
   }
   
 }
