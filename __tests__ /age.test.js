@@ -3,11 +3,9 @@ import EarthAge from './../src/js/age.js';
 describe('EarthAge', () => {
 
   let earthAge;
-  let lastBDay;
 
   beforeEach(() => {
     earthAge = new EarthAge(34);
-    lastBDay = new EarthAge(22);
   });
 
   test('should correctly create an age object with one property of age', () => {
@@ -30,7 +28,8 @@ describe('EarthAge', () => {
     expect(earthAge.calculateJupiterAge(34)).toEqual(2.8668);
   })
 
-  test('should correctly calculate the difference between two numbers in mercury years', () => {
-    expect
+  test('should add a value to the pastBDay property in the EarthAge constructor', () => {
+    earthAge.addPastBDay(23);
+    expect(this.pastBday).toEqual(23);
   })
 });
