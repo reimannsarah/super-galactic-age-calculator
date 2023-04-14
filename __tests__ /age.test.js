@@ -40,4 +40,9 @@ describe('EarthAge', () => {
     earthAge.addPastBDay(23);
     expect(earthAge.mercuryYearsSinceLastBDay()).toEqual(45.8333);
   });
+
+  test('should correctly calculate difference between a current age and a past age in venus years', () => {
+    earthAge.addPastBDay(23);
+    expect(earthAge.venusYearsSinceLastBDay()).toEqual(17.7419);
+  });
 });
