@@ -8,8 +8,9 @@ export default class EarthAge {
     return mercuryAge;
   }
 
-  calculateVenusAge () {
-    
+  calculateVenusAge (age) {
+    let venusAge = parseFloat((age / 0.62).toFixed(4));
+    return venusAge;
   }
   
 }
