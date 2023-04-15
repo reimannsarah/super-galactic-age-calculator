@@ -20,10 +20,10 @@ function clearForm() {
 
 function showMercuryAge(e) {
   e.preventDefault();
-  let age = setAge();
+  let age = parseInt(setAge());
   let resultsDiv = document.getElementById("showResults");
   let showNumber = document.createElement("p");
-  showNumber.innerText = `Your age in Mercury years is: ${earthAge.calculateMercuryAge(age)}`;
+  showNumber.innerText = `If you are ${age} in Earth years, you are ${earthAge.calculateMercuryAge(age)} years old on Mercury`;
   resultsDiv.append(showNumber);
   clearForm();
 }
