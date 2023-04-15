@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&display=swap');
+
 body {
   background-color: black;
     background-image:
@@ -8,18 +10,40 @@ body {
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     color: white;
+    font-family: Sofia Sans Condensed, monospace;
   }
 
-  /* #buttons {
-    display: flex;
-    justify-content: right;
-  } */
+  h1 {
+    text-align: center;
+  }
+
+  #currentAgeForm {
+    text-align: center;
+  }
+
+  #currentAge {
+    margin-left: 10px;
+  }
+
+  #buttons {
+   float: left;
+   width: 50%;
+  }
 
   .button {
-    border: none;
+    border: 1px solid yellow;
     border-radius: 8px;
     padding: 5px;
-    
+    font-family: Sofia Sans Condensed, monospace;
+    background-color: #D3D0D0;
+    margin-right: 10px;
+  }
+
+  .pastfutureinput {
+    width: 20px;
+    background-color: #535454;
+    color: #fff;
+    border-radius: 8px;
   }
 
 
