@@ -1,29 +1,35 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### Calculate your age and the time between your current age and a past or future age on depending on the solar years of a few different planets. 
 
-#### By (Your Name Here)
+#### By Sarah Reimann
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* JavaScript
+* HTML
+* Webpack
+* npm
+* Babel
+* ESLint
+* Jest
 
 ## Description
+Enter your earth age and learn what your age would be in Mercury, Venus, Mars, and Jupiter years. Enter a future or past age and learn how many Mercury, Venus, Mars, or Jupiter years have elapsed or will pass since you were the past age or until you are the future age.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repository to your desktop
+* Install all packages with $ npm install.
+* Build project using webpack with $ npm   run build
+* Start a development server with $ npm run start
+* Lint JS files in the src folder with $ npm run lint
+* Run tests with Jest using $ npm run test
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* It will continue to output no matter how many times you click the buttons. 
+
 
 ## License
+Copyright (c) Sarah Reimann
