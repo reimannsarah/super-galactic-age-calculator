@@ -8,6 +8,13 @@ function setAge() {
   return earthAge.age;
 }
 
+function clearForm() {
+  let form = document.getElementById("currentAgeForm");
+  if(form) {
+    form.reset();
+  }
+}
+
 function showMercuryAge(e) {
   e.preventDefault();
   let age = setAge();
@@ -15,6 +22,7 @@ function showMercuryAge(e) {
   let showNumber = document.createElement("p");
   showNumber.innerText = `Your age in Mercury years is: ${earthAge.calculateMercuryAge(age)}`;
   resultsDiv.append(showNumber);
+  clearForm();
 }
 function showVenusAge(e) {
   e.preventDefault();
