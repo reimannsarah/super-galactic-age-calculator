@@ -4,7 +4,6 @@ import './css/styles.css';
 import EarthAge from "./js/age";
 
 let earthAge = new EarthAge();
-console.log(earthAge);
  
 function setAge() {
   earthAge.age = parseInt(document.getElementById("currentAge").value);
@@ -16,7 +15,7 @@ function clearForm() {
   if(form){
     form.reset();
   }
-  }
+}
 
 
 
@@ -24,8 +23,7 @@ function showMercuryAge(e) {
   e.preventDefault();
   let age = parseInt(setAge());
   let showNumber = document.getElementById("showNumber");
-  if (age.isNaN) {    
-    console.log(typeof age);
+  if (age.isNaN) {
     showNumber.innerText = `If you are ${age} years old on Earth, you are ${earthAge.calculateMercuryAge(age)} years old on Mercury`;
   }else {
     showNumber.innerText = "Please enter a current age";
@@ -48,7 +46,7 @@ function showMarsAge(e) {
   let age = parseInt(setAge());
   let showNumber = document.getElementById("showNumber");
   if(age.isNaN) {
-  showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateMarsAge(age)} on Mars`;
+    showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateMarsAge(age)} on Mars`;
   }else {
     showNumber.innerText = "Please enter a current age";
   }
@@ -59,7 +57,7 @@ function showJupiterAge(e) {
   let age = parseInt(setAge());
   let showNumber = document.getElementById("showNumber");
   if(age.isNaN) {
-  showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateJupiterAge(age)} years old on Jupiter`;
+    showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateJupiterAge(age)} years old on Jupiter`;
   }else {
     showNumber.innerText = "Please enter a current age";
   }
@@ -73,10 +71,10 @@ function howManyMercuryYearsUntil(e) {
   let showNumber = document.getElementById("showNumber");
   if((setAge()).isNaN || futureAge.isNaN) {
     earthAge.addFutureBDay(futureAge);
-    showNumber.innerText = `It will be ${earthAge.mercuryYearsUntilNextBDay()} Mercury years until you are ${futureAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+    showNumber.innerText = `It will be ${earthAge.mercuryYearsUntilNextBDay()} Mercury years until you are ${futureAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("futureMercury");
   input.value = "";
@@ -88,10 +86,10 @@ function howManyVenusYearsUntil(e) {
   earthAge.addFutureBDay(futureAge);
   let showNumber = document.getElementById("showNumber");
   if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It will be ${earthAge.venusYearsUntilNextBDay()} Venus years until you are ${futureAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+    showNumber.innerText = `It will be ${earthAge.venusYearsUntilNextBDay()} Venus years until you are ${futureAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("futureVenus");
   input.value = "";
@@ -103,10 +101,10 @@ function howManyMarsYearsUntil(e) {
   earthAge.addFutureBDay(futureAge);
   let showNumber = document.getElementById("showNumber");
   if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It will be ${earthAge.marsYearsUntilNextBDay()} Mars years until you are ${futureAge}`
-    }else {
+    showNumber.innerText = `It will be ${earthAge.marsYearsUntilNextBDay()} Mars years until you are ${futureAge}`;
+  }else {
     showNumber.innerText = "Please enter a number";
-    }
+  }
   clearForm();
   let input = document.getElementById("futureMars");
   input.value = "";
@@ -118,10 +116,10 @@ function howManyJupiterYearsUntil(e) {
   earthAge.addFutureBDay(futureAge);
   let showNumber = document.getElementById("showNumber");
   if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It will be ${earthAge.jupiterYearsUntilNextBDay()} Jupiter years until you are ${futureAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+    showNumber.innerText = `It will be ${earthAge.jupiterYearsUntilNextBDay()} Jupiter years until you are ${futureAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("futureJupiter");
   input.value = "";
@@ -133,12 +131,11 @@ function howManyMercuryYearsSince(e) {
   let pastAge = parseInt(document.getElementById("pastMercury").value);
   earthAge.addPastBDay(pastAge);
   let showNumber = document.getElementById("showNumber");
-  if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It has been ${earthAge.mercuryYearsSinceLastBDay()} Mercury years since you were ${pastAge}`
-
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+  if ((setAge()).isNaN || pastAge.isNaN) {
+    showNumber.innerText = `It has been ${earthAge.mercuryYearsSinceLastBDay()} Mercury years since you were ${pastAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("pastMercury");
   input.value = "";
@@ -150,11 +147,11 @@ function howManyVenusYearsSince(e) {
   let pastAge = parseInt(document.getElementById("pastVenus").value);
   earthAge.addPastBDay(pastAge);
   let showNumber = document.getElementById("showNumber");
-  if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It has been ${earthAge.venusYearsSinceLastBDay()} Venus years since you were ${pastAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+  if ((setAge()).isNaN || pastAge.isNaN) {
+    showNumber.innerText = `It has been ${earthAge.venusYearsSinceLastBDay()} Venus years since you were ${pastAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("pastVenus");
   input.value = "";
@@ -166,11 +163,11 @@ function howManyMarsYearsSince(e) {
   let pastAge = parseInt(document.getElementById("pastMars").value);
   earthAge.addPastBDay(pastAge);
   let showNumber = document.getElementById("showNumber");
-  if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It has been ${earthAge.marsYearsSinceLastBDay()} Mars years since you were ${pastAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+  if ((setAge()).isNaN || pastAge.isNaN) {
+    showNumber.innerText = `It has been ${earthAge.marsYearsSinceLastBDay()} Mars years since you were ${pastAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("pastMars");
   input.value = "";
@@ -182,11 +179,11 @@ function howManyJupiterYearsSince(e) {
   let pastAge = parseInt(document.getElementById("pastJupiter").value);
   earthAge.addPastBDay(pastAge);
   let showNumber = document.getElementById("showNumber");
-  if ((setAge()).isNaN || futureAge.isNaN) {
-    showNumber.innerText = `It has been ${earthAge.jupiterYearsSinceLastBDay()} Jupiter years since you were ${pastAge}`
-    }else {
-      showNumber.innerText = "Please enter a number";
-    }
+  if ((setAge()).isNaN || pastAge.isNaN) {
+    showNumber.innerText = `It has been ${earthAge.jupiterYearsSinceLastBDay()} Jupiter years since you were ${pastAge}`;
+  }else {
+    showNumber.innerText = "Please enter a number";
+  }
   clearForm();
   let input = document.getElementById("pastJupiter");
   input.value = "";
