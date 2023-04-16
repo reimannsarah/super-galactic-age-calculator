@@ -23,6 +23,13 @@ body {
 
   #currentAge {
     margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #535454;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
   }
 
   #buttons {
@@ -48,5 +55,5 @@ body {
 
   #showresults {
     float: right;
-    
+
   }
