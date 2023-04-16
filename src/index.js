@@ -12,8 +12,10 @@ function setAge() {
 }
 
 function clearForm() {
-  let input = document.querySelectorAll("input");
-  input.value = "";
+  let form = document.getElementById("currentAgeForm");
+  if(form){
+    form.reset();
+  }
   }
 
 
@@ -37,7 +39,6 @@ function showMarsAge(e) {
   let age = parseInt(setAge());
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateMarsAge(age)} on Mars`;
-  resultsDiv.append(showNumber);
   clearForm();
 }
 function showJupiterAge(e) {
@@ -45,7 +46,6 @@ function showJupiterAge(e) {
   let age = parseInt(setAge());
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `If you are ${age} on Earth, you are ${earthAge.calculateJupiterAge(age)} years old on Jupiter`;
-  resultsDiv.append(showNumber);
   clearForm();
 }
 
@@ -57,6 +57,8 @@ function howManyMercuryYearsUntil(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It will be ${earthAge.mercuryYearsUntilNextBDay()} Mercury years until you are ${futureAge}`
   clearForm();
+  let input = document.getElementById("futureMercury");
+  input.value = "";
 }
 function howManyVenusYearsUntil(e) {
   e.preventDefault();
@@ -66,6 +68,8 @@ function howManyVenusYearsUntil(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It will be ${earthAge.venusYearsUntilNextBDay()} Venus years until you are ${futureAge}`
   clearForm();
+  let input = document.getElementById("futureVenus");
+  input.value = "";
 }
 function howManyMarsYearsUntil(e) {
   e.preventDefault();
@@ -75,6 +79,8 @@ function howManyMarsYearsUntil(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It will be ${earthAge.marsYearsUntilNextBDay()} Mars years until you are ${futureAge}`
   clearForm();
+  let input = document.getElementById("futureMars");
+  input.value = "";
 }
 function howManyJupiterYearsUntil(e) {
   e.preventDefault();
@@ -84,6 +90,8 @@ function howManyJupiterYearsUntil(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It will be ${earthAge.jupiterYearsUntilNextBDay()} Jupiter years until you are ${futureAge}`
   clearForm();
+  let input = document.getElementById("futureJupiter");
+  input.value = "";
 }
 
 function howManyMercuryYearsSince(e) {
@@ -94,6 +102,8 @@ function howManyMercuryYearsSince(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It has been ${earthAge.mercuryYearsSinceLastBDay()} Mercury years since you were ${pastAge}`
   clearForm();
+  let input = document.getElementById("pastMercury");
+  input.value = "";
 }
 
 function howManyVenusYearsSince(e) {
@@ -104,6 +114,8 @@ function howManyVenusYearsSince(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It has been ${earthAge.venusYearsSinceLastBDay()} Venus years since you were ${pastAge}`
   clearForm();
+  let input = document.getElementById("pastVenus");
+  input.value = "";
 }
 
 function howManyMarsYearsSince(e) {
@@ -114,6 +126,8 @@ function howManyMarsYearsSince(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It has been ${earthAge.marsYearsSinceLastBDay()} Mars years since you were ${pastAge}`
   clearForm();
+  let input = document.getElementById("pastMars");
+  input.value = "";
 }
 
 function howManyJupiterYearsSince(e) {
@@ -124,6 +138,8 @@ function howManyJupiterYearsSince(e) {
   let showNumber = document.getElementById("showNumber");
   showNumber.innerText = `It has been ${earthAge.jupiterYearsSinceLastBDay()} Jupiter years since you were ${pastAge}`
   clearForm();
+  let input = document.getElementById("pastJupiter");
+  input.value = "";
 }
 
 
