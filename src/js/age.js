@@ -35,8 +35,8 @@ export default class EarthAge {
   }
   
   addFutureBDay(futureBDay) {
-   this.futureBDay = futureBDay;
-   return this.futureBDay;
+    this.futureBDay = futureBDay;
+    return this.futureBDay;
   }
 
   mercuryYearsSinceLastBDay() {
@@ -86,6 +86,5 @@ export default class EarthAge {
     let jupiterDifference = parseFloat((difference / 11.86).toFixed(4));
     return jupiterDifference;
   }
-
-  }
+}
 
