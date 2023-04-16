@@ -22,9 +22,14 @@ function clearForm() {
 
 function showMercuryAge(e) {
   e.preventDefault();
-  let age = parseInt(setAge());
-  let showNumber = document.getElementById("showNumber");
-  showNumber.innerText = `If you are ${age} years old on Earth, you are ${earthAge.calculateMercuryAge(age)} years old on Mercury`;
+  if (age !== NaN) {
+    let age = parseInt(setAge());
+    console.log(age);
+    let showNumber = document.getElementById("showNumber");
+    showNumber.innerText = `If you are ${age} years old on Earth, you are ${earthAge.calculateMercuryAge(age)} years old on Mercury`;
+  }else {
+    showNumber.innerText = "fart";
+  }
   clearForm();
 }
 function showVenusAge(e) {
