@@ -48,7 +48,7 @@ body {
     border-radius: 8px;
     padding: 5px;
     font-family: Sofia Sans Condensed, monospace;
-    background-color: #D3D0D0;
+    background-color: #B1AEAE;
     margin-right: 10px;
   }
 
@@ -61,10 +61,13 @@ body {
   }
 
   .pastfutureinput {
-    width: 20px;
+    width: 22px;
+    height: 22px;
     background-color: #535454;
     color: #fff;
     border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
   }
 
   .pastfutureinput:hover {
