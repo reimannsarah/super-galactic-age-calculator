@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Galactic Age Calculator</title>
 </head>
+
 <body>
   <h1>Super Galactic Age Calculator</h1>
   <form id="currentAgeForm">
-  <label>Enter your current age:<input type="text" id="currentAge"></label>
+    <label>Enter your current age:<input type="text" id="currentAge"></label>
   </form>
   <br><br>
   <br><br>
-  <div id="buttons">
-    <button class="button" id="ageInMercuryYears">Show me my age in Mercury Years</button>
-    <br><br>
-    <button class="button" id="ageInVenusYears">Show me my age in Venus Years</button>
-    <br><br>
-    <button class="button" id="ageInMarsYears">Show me my age in Mars Years</button>
-    <br><br>
-    <button class="button" id="ageInJupiterYears">Show me my age in Jupiter Years</button>
-    <br><br>
-    <button class="button" id="mercuryYearsUntil">Show me how many Mercury Years until I'm:</button><input class="pastfutureinput" id="futureMercury"type="text">
-    <br><br>
-    <button class="button" id="venusYearsUntil">Show me how many Venus Years until I'm:</button><input class="pastfutureinput" id="futureVenus" type="text">
-    <br><br>
-    <button class="button" id="marsYearsUntil">Show me how many Mars Years until I'm:</button><input class="pastfutureinput" id="futureMars" type="text">
-    <br><br>
-    <button class="button" id="jupiterYearsUntil">Show me how many Jupiter Years until I'm:</button><input class="pastfutureinput" id="futureJupiter" type="text">
-    <br><br>
-    <button class="button" id="mercuryYearsSince">Show me how many Mercury years have gone by since I was:</button><input class="pastfutureinput" id="pastMercury" type="text">
-    <br><br>
-    <button class="button" id="venusYearsSince">Show me how many Venus have gone by since I was:</button><input class="pastfutureinput" id="pastVenus" type="text">
-    <br><br>
-    <button class="button" id="marsYearsSince">Show me how many Mars have gone by since I was:</button><input class="pastfutureinput" id="pastMars" type="text">
-    <br><br>
-    <button class="button" id="jupiterYearsSince">Show me how many Jupiter have gone by since I was:</button><input class="pastfutureinput" id="pastJupiter" type="text">
+  <div class="buttons-results">
+    <div id="buttons">
+      <button class="button" id="ageInMercuryYears">Show me my age in Mercury Years</button>
+      <br><br>
+      <button class="button" id="ageInVenusYears">Show me my age in Venus Years</button>
+      <br><br>
+      <button class="button" id="ageInMarsYears">Show me my age in Mars Years</button>
+      <br><br>
+      <button class="button" id="ageInJupiterYears">Show me my age in Jupiter Years</button>
+      <br><br>
+      <button class="button" id="mercuryYearsUntil">Show me how many Mercury Years until I'm:</button><input class="pastfutureinput" id="futureMercury" type="text">
+      <br><br>
+      <button class="button" id="venusYearsUntil">Show me how many Venus Years until I'm:</button><input class="pastfutureinput" id="futureVenus" type="text">
+      <br><br>
+      <button class="button" id="marsYearsUntil">Show me how many Mars Years until I'm:</button><input class="pastfutureinput" id="futureMars" type="text">
+      <br><br>
+      <button class="button" id="jupiterYearsUntil">Show me how many Jupiter Years until I'm:</button><input class="pastfutureinput" id="futureJupiter" type="text">
+      <br><br>
+      <button class="button" id="mercuryYearsSince">Show me how many Mercury years have gone by since I was:</button><input class="pastfutureinput" id="pastMercury" type="text">
+      <br><br>
+      <button class="button" id="venusYearsSince">Show me how many Venus have gone by since I was:</button><input class="pastfutureinput" id="pastVenus" type="text">
+      <br><br>
+      <button class="button" id="marsYearsSince">Show me how many Mars have gone by since I was:</button><input class="pastfutureinput" id="pastMars" type="text">
+      <br><br>
+      <button class="button" id="jupiterYearsSince">Show me how many Jupiter have gone by since I was:</button><input class="pastfutureinput" id="pastJupiter" type="text">
+    </div>
+    <div id="showResults">
+      <p id="showNumber"></p>
+    </div>
   </div>
-<div id="showResults">
-  <p id="showNumber"></p>
-</div>
 </body>
+
 </html>
